@@ -1,16 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modelo;
 
-/**
- *
- * @author Estudiante
- */
+
 public class Sede {
     private int id;
-    private String direccion, nombre;
+    private String direccion;
+    private String nombre;
+
+    public Sede(int id, String direccion, String nombre) {
+        this.id = id;
+        this.direccion = direccion;
+        this.nombre = nombre;
+    }
 
     public int getId() {
         return id;
@@ -28,10 +29,4 @@ public class Sede {
         this.direccion = direccion;
     }
     
-    public Sede(int id, String direccion, String nombre) {
-        this.id = id;
-        this.direccion = direccion;
-        this.nombre = nombre;
-    }
-
 }

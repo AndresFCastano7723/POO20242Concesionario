@@ -1,35 +1,35 @@
+
 package modelo;
 
+
 public class Cliente {
+    private int cc;
+    private String nombre;
+    private int telefono;
+    private String direccion;
 
-    private int id, telefono;
-    private String nombre, direccion;
-
-    public int getId() {
-        return id;
-    }
-
-    public int getTelefono() {
-        return telefono;
+    public int getCc() {
+        return cc;
     }
 
     public String getNombre() {
         return nombre;
     }
 
+    public int getTelefono() {
+        return telefono;
+    }
+
     public String getDireccion() {
         return direccion;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Cliente(int id, int telefono, String nombre, String direccion) {
-        this.id = id;
-        this.telefono = telefono;
+    public Cliente(int cc, String nombre, int telefono, String direccion) {
+        this.cc = cc;
         this.nombre = nombre;
+        this.telefono = telefono;
         this.direccion = direccion;
     }
-
+    
+    
 }

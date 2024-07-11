@@ -1,32 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+
 package modelo;
 
-/**
- *
- * @author Estudiante
- */
 public class Empleado {
-    private int id;
-    private String nombre, cargo;
+    private int cc;
+    private String nombres;
+    private String cargo;
 
-    public Empleado(int id, String nombre, String cargo) {
-        this.id = id;
-        this.nombre = nombre;
+    public Empleado(int cc, String nombres, String cargo) {
+        this.cc = cc;
+        this.nombres = nombres;
         this.cargo = cargo;
     }
 
-    public int getId() {
-        return id;
+    public int getCc() {
+        return cc;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombres() {
+        return nombres;
     }
 
     public String getCargo() {
         return cargo;
     }
+    
+    
+    
 }

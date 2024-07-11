@@ -1,20 +1,16 @@
-            /*
-             * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-             * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modelo;
 
-/**
- *
- * @author Estudiante
- */
 public class Vehiculo {
-
-    private int id, modelo;
+    private int id;
     private String marca;
+    private int modelo;
     private double precio;
 
-    public void setPrecio(double precio) {
+    public Vehiculo(int id, String marca, int modelo, double precio) {
+        this.id = id;
+        this.marca = marca;
+        this.modelo = modelo;
         this.precio = precio;
     }
 
@@ -22,22 +18,20 @@ public class Vehiculo {
         return id;
     }
 
-    public int getModelo() {
-        return modelo;
-    }
-
     public String getMarca() {
         return marca;
+    }
+
+    public int getModelo() {
+        return modelo;
     }
 
     public double getPrecio() {
         return precio;
     }
 
-    public Vehiculo(int id, int modelo, String marca, double precio) {
-        this.id = id;
-        this.modelo = modelo;
-        this.marca = marca;
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
+    
 }
